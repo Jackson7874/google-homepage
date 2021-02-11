@@ -1,1 +1,0 @@
-Recreating the google homepage for the odin project. Using html and css.
