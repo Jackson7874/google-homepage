@@ -12,5 +12,73 @@ body, html {
 
 body {
     background-color: #fff;
-    display: block;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #222;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px #dfe1e5;
+    border-radius: 24px;
+    height: 40px;
+    width: 575px;
+}
+
+#searchBar {
+    all: unset;
+    height: 100%;
+    width: 100%;
+    padding: 6px 5px;
+}
+
+#searchIcon {
+    margin-left: 16px;
+}
+
+#SignIn {
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    padding: 0 24px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#SignIn:hover {
+    background: #2779e4;
+}
+
+#GoSearch, #Lucky {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#GoSearch:hover, #Lucky:hover {
+    border: 1px solid #dadada;
 }
