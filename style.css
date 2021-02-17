@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    color: #222;
+    color: rgb(0, 0, 0);
     font-size: 14px;
     text-decoration: none;
 }
@@ -35,15 +35,12 @@ form {
     border: solid 1px #dfe1e5;
     border-radius: 24px;
     height: 45px;
-    width: 575px;
-
     margin: auto;
-    width: 50%;
+    width: 40%;
 }
 
 .topnav {
-    display: flex;
-    flex-direction: row;
+    display: initial;
     align-items: center;
     padding: 15px 0 15px 20px;
     word-spacing: 10px;
@@ -51,7 +48,8 @@ form {
 }
 
 #topnav-right {
-    margin-left: 77%;
+    display: inline;
+    margin-left: 75%;
     padding: 0px 20px 0px 20px;
 }
 
@@ -61,12 +59,12 @@ form {
 }
 
 #logo {
-    padding-top: 60px;
+    margin-top: 170px;
     padding-bottom: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 19%;
 }
 
 #searchBar {
@@ -111,15 +109,20 @@ form {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
-    color: #3c4043;
+    color: #000000;
     font-size: 14px;
     padding: 0 16px;
     height: 36px;
     text-align: center;
     cursor: pointer;
     user-select: none;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#GoSearch {
+    margin-right: 7px;
+    margin-left: 40%;
 }
 
 #GoSearch:hover, #Lucky:hover {
@@ -127,11 +130,43 @@ form {
 }
 
 .footer {
-    height: 7%;
+    height: 6%;
     background-color: #f5f5f5;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    word-spacing: 30px;
+}
+
+#footer-left a, #footer-right a, #center a{
+    color: #5f5f5f;
+}
+
+#how {
+    word-spacing: initial;
+}
+
+#footer-left {
+    padding: 0px 150px 0px 30px;
+    justify-content: center;
+}
+
+#footer-right {
+    display: inline;
+    margin-right: 30px;
+    padding: 0px 0px 0px 247px;
+    justify-content: center;
+}
+
+#center {
+    display: inline;
+    padding: 0px 150px 0px 130px;
+    justify-content: center;
+    word-spacing: initial;
 }
 
 #leaf {
     padding: 5px 5px 0 5px;
     width: 13px;
+    user-select: none;
 }
