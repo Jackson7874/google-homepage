@@ -95,11 +95,7 @@ form {
     all: unset;
     height: 100%;
     width: 100%;
-    padding: 6px 5px;
-}
-
-#searchBar::-webkit-search-cancel-button {
-    opacity: 0.9;
+    padding: 6px 15px 5px;
 }
 
 #form:hover {
@@ -107,9 +103,16 @@ form {
 }
 
 #searchIcon {
-    font-size: 14px;
+    font-size: 16px;
     color: #a0a0a0;
     margin-left: 16px;
+}
+
+#micIcon {
+    margin-right: 15px;
+    height: 26px;
+    width: 26px;
+    padding-left: 10px;
 }
 
 #SignIn {
@@ -155,7 +158,8 @@ form {
 }
 
 .footer {
-    height: 6%;
+    min-height: 6%;
+    height: auto;
     background-color: #f5f5f5;
     align-items: center;
     display: flex;
