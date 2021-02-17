@@ -1,4 +1,5 @@
 * {
+    appearance: none;
     -webkit-appearance: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -55,19 +56,18 @@ form {
     outline: none;
     color: #5f6368;
     position: relative;
-    margin-right: 50px;
+    margin-right: 55px;
 }
 
 .dots-grid {
     position: absolute;
-    display: block;
     height: 23px;
     width: 23px;
     color: #5f6368;
     border: solid 1px transparent;
     border-radius: 50%;
     border-width: 10px;
-    margin-top: -38px;
+    margin-top: -3px;
 }
 
 .dots-grid:hover {
