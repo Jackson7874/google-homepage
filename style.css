@@ -13,13 +13,77 @@ body, html {
 
 body {
     background-color: #fff;
-    color: black;
-    display: flex;
-    flex-direction: column;
     font-family: arial, sans-serif;
 }
 
-a {
+/* Top Nav bar */
+.nav {
+    color: #222;
+    max-height: 50px;
+    height: 100%;
+    border: solid 2px red;
+}
+
+.nav-list {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+
+/* Top Nav bar - Changes needed*/
+.grid-dots {
+    outline: none;
+    color: #5f6368;
+    position: relative;
+    margin-right: 55px;
+}
+
+.dots {
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    color: #5f6368;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    border-width: 10px;
+    margin-top: -3px;
+}
+
+.dots-grid:hover {
+    background-color: #f5f5f5;
+    border: solid 1px #f5f5f5;
+    border-radius: 50%;
+    border-width: 10px;
+}
+
+#SignIn {
+    display: inline-block;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    padding: 0 24px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#SignIn:hover {
+    background: #2779e4;
+}
+
+/*a {
     color: rgb(0, 0, 0);
     font-size: 14px;
     text-decoration: none;
@@ -52,31 +116,6 @@ form {
     margin-left: 74%;
 }
 
-.dots {
-    outline: none;
-    color: #5f6368;
-    position: relative;
-    margin-right: 55px;
-}
-
-.dots-grid {
-    position: absolute;
-    height: 23px;
-    width: 23px;
-    color: #5f6368;
-    border: solid 1px transparent;
-    border-radius: 50%;
-    border-width: 10px;
-    margin-top: -3px;
-}
-
-.dots-grid:hover {
-    background-color: #f5f5f5;
-    border: solid 1px #f5f5f5;
-    border-radius: 50%;
-    border-width: 10px;
-}
-
 .center {
     width: 100%;
     height: 93%;
@@ -106,7 +145,7 @@ form {
     font-size: 16px;
     color: #a0a0a0;
     margin-left: 16px;
-}
+}*/
 
 #micIcon {
     margin-right: 15px;
@@ -115,24 +154,7 @@ form {
     padding-left: 10px;
 }
 
-#SignIn {
-    display: inline-block;
-    background-color: #1a73e8;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    color: white;
-    font-size: 14px;
-    padding: 0 24px;
-    height: 36px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-}
-
-#SignIn:hover {
-    background: #2779e4;
-}
-
+/*
 #GoSearch, #Lucky {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -198,4 +220,4 @@ form {
     padding: 5px 5px 0 5px;
     width: 13px;
     user-select: none;
-}
+}*/
