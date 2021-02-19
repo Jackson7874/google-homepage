@@ -5,7 +5,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body, html {
+/* basic reset */
+html, body, ul {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -14,32 +15,48 @@ body, html {
 body {
     background-color: #fff;
     font-family: arial, sans-serif;
-}
-
-/* Top Nav bar */
-.nav {
-    color: #222;
-    max-height: 50px;
-    height: 100%;
-    border: solid 2px red;
-}
-
-.nav-list {
-    display: flex;
-    flex-flow: row nowrap;
+    max-width: 100%;
     width: 100%;
-    padding: 5px;
 }
 
+/* Top Nav Bar */
+/* width & height of nav bar */
+.nav {
+    max-height: 50px;
+    width: auto;
+    height: 100%;
+}
+
+/* list items positioning */
+.nav-list {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    padding: 12px 6px 0 0;
+}
+
+/* adds spacing between each list item / removes bullets */
 li {
+    float: left;
     list-style: none;
     display: inline-block;
-    margin: 5px;
+    margin-left: 20px;
 }
 
+/* top nav text effects */
+.nav-list a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #222;
+}
 
+/* grid and sign in button positioning */
+.nav-extras {
+    float: right;
+    display: inline-block;
+    padding: 12px 6px 0 0;
+}
 
-/* Top Nav bar - Changes needed*/
+/* inner positioning for grid dots */
 .grid-dots {
     outline: none;
     color: #5f6368;
@@ -47,6 +64,7 @@ li {
     margin-right: 55px;
 }
 
+/* dots sizing & hover border setup */
 .dots {
     position: absolute;
     height: 23px;
@@ -58,15 +76,16 @@ li {
     margin-top: -3px;
 }
 
-.dots-grid:hover {
+/* dots hover effect */
+.dots:hover {
     background-color: #f5f5f5;
     border: solid 1px #f5f5f5;
     border-radius: 50%;
     border-width: 10px;
 }
 
+/* sign in button design */
 #SignIn {
-    display: inline-block;
     background-color: #1a73e8;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -83,19 +102,28 @@ li {
     background: #2779e4;
 }
 
-/*a {
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    text-decoration: none;
+
+
+/* Logo / Search Bar - fix all dis for resizing issues (Google logo fixed)*/
+/* overall center div */
+.center {
+    height: auto;
+    display: block;
 }
 
-a:hover {
-    text-decoration: underline;
+/* google logo positioning */
+#logo {
+    margin-top: 170px;
+    padding-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
 }
 
+/* search bar positioning */
 form {
     display: flex;
-    flex-direction: row;
     align-items: center;
     border: solid 1px #dfe1e5;
     border-radius: 24px;
@@ -104,32 +132,11 @@ form {
     width: 40%;
 }
 
-.topnav {
-    color: #222;
-    align-items: center;
-    padding: 15px 15px 0px 25px;
-    word-spacing: 10px;
+form:hover {
+    box-shadow: #dfe1e5 0 0 5px 1px;
 }
 
-#topnav-right {
-    display: inline-block;
-    margin-left: 74%;
-}
-
-.center {
-    width: 100%;
-    height: 93%;
-}
-
-#logo {
-    margin-top: 170px;
-    padding-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 19%;
-}
-
+/* search bar style */
 #searchBar {
     all: unset;
     height: 100%;
@@ -137,16 +144,14 @@ form {
     padding: 6px 15px 5px;
 }
 
-#form:hover {
-    box-shadow: #dfe1e5 0 0 5px 1px;
-}
-
+/* search bar magnifying icon */
 #searchIcon {
     font-size: 16px;
     color: #a0a0a0;
     margin-left: 16px;
-}*/
+}
 
+/* search bar mic icon */
 #micIcon {
     margin-right: 15px;
     height: 26px;
@@ -154,8 +159,10 @@ form {
     padding-left: 10px;
 }
 
-/*
+/* form buttons style & positioning */
 #GoSearch, #Lucky {
+    display: flex;
+    flex-direction: row;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -167,18 +174,23 @@ form {
     cursor: pointer;
     user-select: none;
     justify-content: center;
-    margin-top: 30px;
+    margin: auto;
 }
 
+/* google search button positioning */
 #GoSearch {
-    margin-right: 7px;
-    margin-left: 40%;
+    display: inline-flex;
+    justify-content: center;
 }
 
 #GoSearch:hover, #Lucky:hover {
     border: 1px solid #e6e6e6;
 }
 
+
+
+/* Footer Navigation Bar */
+/*
 .footer {
     min-height: 6%;
     height: auto;
