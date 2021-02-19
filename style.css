@@ -5,8 +5,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* basic reset */
-html, body, ul {
+body, html {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -14,58 +13,53 @@ html, body, ul {
 
 body {
     background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
     font-family: arial, sans-serif;
-    max-width: 100%;
-    width: 100%;
 }
 
-/* Top Nav Bar */
-/* width & height of nav bar */
-.nav {
-    max-height: 50px;
-    width: auto;
-    height: 100%;
-}
-
-/* list items positioning */
-.nav-list {
-    display: inline-flex;
-    flex-flow: row nowrap;
-    padding: 12px 6px 0 0;
-}
-
-/* adds spacing between each list item / removes bullets */
-li {
-    float: left;
-    list-style: none;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/* top nav text effects */
-.nav-list a {
-    text-decoration: none;
+a {
+    color: rgb(0, 0, 0);
     font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px #dfe1e5;
+    border-radius: 24px;
+    height: 45px;
+    margin: auto;
+    width: 40%;
+}
+
+.topnav {
     color: #222;
+    align-items: center;
+    padding: 15px 15px 0px 25px;
+    word-spacing: 10px;
 }
 
-/* grid and sign in button positioning */
-.nav-extras {
-    float: right;
+#topnav-right {
     display: inline-block;
-    padding: 12px 6px 0 0;
+    margin-left: 74%;
 }
 
-/* inner positioning for grid dots */
-.grid-dots {
+.dots {
     outline: none;
     color: #5f6368;
     position: relative;
     margin-right: 55px;
 }
 
-/* dots sizing & hover border setup */
-.dots {
+.dots-grid {
     position: absolute;
     height: 23px;
     width: 23px;
@@ -76,16 +70,53 @@ li {
     margin-top: -3px;
 }
 
-/* dots hover effect */
-.dots:hover {
+.dots-grid:hover {
     background-color: #f5f5f5;
     border: solid 1px #f5f5f5;
     border-radius: 50%;
     border-width: 10px;
 }
 
-/* sign in button design */
+.center {
+    width: 100%;
+    height: 93%;
+}
+
+#logo {
+    margin-top: 170px;
+    padding-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19%;
+}
+
+#searchBar {
+    all: unset;
+    height: 100%;
+    width: 100%;
+    padding: 6px 15px 5px;
+}
+
+#form:hover {
+    box-shadow: #dfe1e5 0 0 5px 1px;
+}
+
+#searchIcon {
+    font-size: 16px;
+    color: #a0a0a0;
+    margin-left: 16px;
+}
+
+#micIcon {
+    margin-right: 15px;
+    height: 26px;
+    width: 26px;
+    padding-left: 10px;
+}
+
 #SignIn {
+    display: inline-block;
     background-color: #1a73e8;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -102,67 +133,7 @@ li {
     background: #2779e4;
 }
 
-
-
-/* Logo / Search Bar - fix all dis for resizing issues (Google logo fixed)*/
-/* overall center div */
-.center {
-    height: auto;
-    display: block;
-}
-
-/* google logo positioning */
-#logo {
-    margin-top: 170px;
-    padding-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    flex-shrink: 0;
-}
-
-/* search bar positioning */
-form {
-    display: flex;
-    align-items: center;
-    border: solid 1px #dfe1e5;
-    border-radius: 24px;
-    height: 45px;
-    margin: auto;
-    width: 40%;
-}
-
-form:hover {
-    box-shadow: #dfe1e5 0 0 5px 1px;
-}
-
-/* search bar style */
-#searchBar {
-    all: unset;
-    height: 100%;
-    width: 100%;
-    padding: 6px 15px 5px;
-}
-
-/* search bar magnifying icon */
-#searchIcon {
-    font-size: 16px;
-    color: #a0a0a0;
-    margin-left: 16px;
-}
-
-/* search bar mic icon */
-#micIcon {
-    margin-right: 15px;
-    height: 26px;
-    width: 26px;
-    padding-left: 10px;
-}
-
-/* form buttons style & positioning */
 #GoSearch, #Lucky {
-    display: flex;
-    flex-direction: row;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -174,23 +145,18 @@ form:hover {
     cursor: pointer;
     user-select: none;
     justify-content: center;
-    margin: auto;
+    margin-top: 30px;
 }
 
-/* google search button positioning */
 #GoSearch {
-    display: inline-flex;
-    justify-content: center;
+    margin-right: 7px;
+    margin-left: 40%;
 }
 
 #GoSearch:hover, #Lucky:hover {
     border: 1px solid #e6e6e6;
 }
 
-
-
-/* Footer Navigation Bar */
-/*
 .footer {
     min-height: 6%;
     height: auto;
@@ -232,4 +198,4 @@ form:hover {
     padding: 5px 5px 0 5px;
     width: 13px;
     user-select: none;
-}*/
+}
