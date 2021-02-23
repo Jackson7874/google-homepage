@@ -22,24 +22,28 @@ body {
 /* Top Nav Bar */
 /* width & height of nav bar */
 .nav {
+    display: flex;
     max-height: 50px;
     width: auto;
     height: 100%;
+    justify-content: space-between;
 }
 
 /* list items positioning */
 .nav-list {
     display: inline-flex;
     flex-flow: row nowrap;
-    padding: 12px 6px 0 0;
+    padding-left: 26px;
+    width: 100%;
+    padding-top: 21px;
+    justify-content: space-between;
 }
 
 /* adds spacing between each list item / removes bullets */
-li {
-    float: left;
+.nav-list li {
     list-style: none;
     display: inline-block;
-    margin-left: 20px;
+    margin-right: 16px;
 }
 
 /* top nav text effects */
@@ -49,17 +53,21 @@ li {
     color: #222;
 }
 
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
 /* grid and sign in button positioning */
 .nav-extras {
-    float: right;
     display: inline-block;
-    padding: 12px 6px 0 0;
+    padding-right: 18px;
+    padding-top: 12px;
 }
 
 /* inner positioning for grid dots */
 .grid-dots {
     outline: none;
-    color: #5f6368;
+    fill: #5f6368;
     position: relative;
     margin-right: 55px;
 }
@@ -91,12 +99,18 @@ li {
     border-radius: 4px;
     color: white;
     font-size: 14px;
-    padding: 0 24px;
+    padding: 0 26px 0 26px;
     height: 36px;
     text-align: center;
     cursor: pointer;
     user-select: none;
 }
+
+@media only screen and (max-width: 700px) {
+    #SignIn {
+      padding: 0 16px 0 16px;
+    }
+  }
 
 #SignIn:hover {
     background: #2779e4;
@@ -104,16 +118,17 @@ li {
 
 
 
+
 /* Logo / Search Bar - fix all dis for resizing issues (Google logo fixed)*/
 /* overall center div */
 .center {
-    height: auto;
+    height: 63%;
     display: block;
 }
 
 /* google logo positioning */
 #logo {
-    margin-top: 170px;
+    margin-top: 125px;
     padding-bottom: 30px;
     display: block;
     margin-left: auto;
@@ -130,9 +145,15 @@ form {
     border-radius: 24px;
     height: 45px;
     margin: auto;
-    width: 40%;
-    border: solid 2px green;
+    max-width: 585px;
+    width: 100%;
 }
+
+@media only screen and (max-width: 900px) {
+    form {
+      max-width: 455px;
+    }
+  }
 
 form:hover {
     box-shadow: #dfe1e5 0 0 5px 1px;
@@ -144,7 +165,6 @@ form:hover {
     height: 100%;
     width: 100%;
     padding: 6px 15px 5px;
-    border: solid 2px red;
 }
 
 /* search bar magnifying icon */
@@ -197,24 +217,55 @@ form:hover {
 
 
 /* Footer Navigation Bar */
-/*
+/* width & height of footer */
 .footer {
-    min-height: 6%;
-    height: auto;
-    background-color: #f5f5f5;
-    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    word-spacing: 30px;
+    height: auto;
+    min-height: 48px;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#footer-left a, #footer-right a, #center a{
+/* footer elements positioning */
+.footer-list, .footer-list-right, #center {
+    display: flex;
+    padding-left: 35px;
+}
+
+/* footer list elements positioning */
+.footer-list li, .footer-list-right li {
+    list-style: none;
+    margin-right: 31px;
+}
+
+/* footer list elements style */
+.footer-list a, .footer-list-right a, #center a {
+    text-decoration: none;
+    font-size: 14px;
     color: #5f5f5f;
 }
 
-#how {
-    word-spacing: initial;
+.footer-list a:hover, .footer-list-right a:hover, #center a:hover {
+    text-decoration: underline;
 }
+
+#center {
+    padding-right: 150px;
+}
+
+#leaf {
+    padding: 0px 5px 0 5px;
+    width: 14px;
+    height: 14px;
+    user-select: none;
+}
+
+/*
 
 #footer-left {
     padding: 0px 150px 0px 30px;
@@ -233,10 +284,4 @@ form:hover {
     padding: 0px 150px 0px 130px;
     justify-content: center;
     word-spacing: initial;
-}
-
-#leaf {
-    padding: 5px 5px 0 5px;
-    width: 13px;
-    user-select: none;
 }*/
