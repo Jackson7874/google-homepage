@@ -128,8 +128,8 @@ body {
 
 /* google logo positioning */
 #logo {
-    margin-top: 100px;
-    padding-bottom: 30px;
+    margin-top: 88px;
+    padding-bottom: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -192,7 +192,7 @@ form:hover {
 
 /* form buttons style & positioning */
 #GoSearch, #Lucky {
-    margin-top: 25px;
+    margin-top: 29px;
     height: 36px;
     padding: 0 16px;
     background-color: #f8f9fa;
@@ -268,7 +268,6 @@ form:hover {
 
 @media only screen and (max-width: 1200px) {
     footer {
-        display: flex;
         flex-direction: column;
     }
     #center {
