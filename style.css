@@ -128,7 +128,7 @@ body {
 
 /* google logo positioning */
 #logo {
-    margin-top: 125px;
+    margin-top: 100px;
     padding-bottom: 30px;
     display: block;
     margin-left: auto;
@@ -149,7 +149,7 @@ form {
     width: 100%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     form {
       max-width: 455px;
     }
@@ -258,6 +258,7 @@ form:hover {
     padding-right: 150px;
 }
 
+
 #leaf {
     padding: 0px 5px 0 5px;
     width: 14px;
@@ -265,23 +266,19 @@ form:hover {
     user-select: none;
 }
 
-/*
-
-#footer-left {
-    padding: 0px 150px 0px 30px;
-    justify-content: center;
+@media only screen and (max-width: 1200px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    #center {
+        order: 1;
+        padding-right: 0px;
+    }
+    .footer-list {
+        order: 2;
+    }
+    .footer-list-right {
+        order: 3;
+    }
 }
-
-#footer-right {
-    display: inline;
-    margin-right: 30px;
-    padding: 0px 0px 0px 247px;
-    justify-content: center;
-}
-
-#center {
-    display: inline;
-    padding: 0px 150px 0px 130px;
-    justify-content: center;
-    word-spacing: initial;
-}*/
