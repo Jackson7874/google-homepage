@@ -217,7 +217,61 @@ form:hover {
 
 
 /* Footer Navigation Bar */
-/* width & height of footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    min-height: 48px;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+}
+
+.footer-list {
+   justify-content: flex-start;
+   min-width: 30%;
+   order: 1;
+}
+
+.footer-list-right {
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+}
+
+.footer-list a, .footer-list-right a, #center a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f5f5f;
+}
+
+.footer-list a:hover, .footer-list-right a:hover, #center a:hover {
+    text-decoration: underline;
+}
+
+.footer-list {
+    align-items: center;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.column {
+    border: solid 2px red;
+}
+
+#leaf {
+    padding: 0px 5px 0 5px;
+    width: 14px;
+    height: 14px;
+    user-select: none;
+}
+
+/* width & height of footer 
 .footer {
     position: fixed;
     left: 0;
@@ -229,21 +283,21 @@ form:hover {
     background-color: #f2f2f2;
     justify-content: space-between;
     align-items: center;
-}
+}*/
 
-/* footer elements positioning */
+/* footer elements positioning 
 .footer-list, .footer-list-right, #center {
-    display: flex;
+    display: grid;
     padding-left: 35px;
-}
+}*/
 
-/* footer list elements positioning */
+/* footer list elements positioning 
 .footer-list li, .footer-list-right li {
     list-style: none;
     margin-right: 31px;
-}
+} */
 
-/* footer list elements style */
+/* footer list elements style 
 .footer-list a, .footer-list-right a, #center a {
     text-decoration: none;
     font-size: 14px;
@@ -264,20 +318,23 @@ form:hover {
     width: 14px;
     height: 14px;
     user-select: none;
-}
+}*/
 
 @media only screen and (max-width: 1200px) {
-    footer {
-        flex-direction: column;
-    }
     #center {
-        order: 1;
-        padding-right: 0px;
+        order: 0;
+        width: 100%;
+        justify-content: center;
     }
     .footer-list {
         order: 2;
+        padding: 0 0 30px 0;
     }
     .footer-list-right {
         order: 3;
+        padding: 0 0 15px 0;
+    }
+    .footer {
+        justify-content: space-evenly;
     }
 }
