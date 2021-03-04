@@ -233,7 +233,7 @@ form:hover {
     justify-content: space-between;
 }
 
-/* Footer Nav div's setup */
+/* Footer Nav div setup */
 .footer-list, .footer-list-right, #center {
    display: inline-flex;
    flex-flow: row nowrap;
